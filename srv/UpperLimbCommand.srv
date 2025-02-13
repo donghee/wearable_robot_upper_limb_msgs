@@ -1,11 +1,15 @@
 # Request
 # Available Modes
-uint8 USER_MODE_1 = 0
-uint8 USER_MODE_2 = 1
-uint8 USER_MODE_3 = 2
+uint8 USER_TASK_1 = 1
+uint8 USER_TASK_2 = 2
+uint8 USER_TASK_3 = 3
 
-uint8 mode      # Mode switch (USER_MODE_1, 2, 3)
-bool[2] button     # button is true when pressed
+uint8 COMMAND_START = 1
+uint8 COMMAND_STOP = 2
+uint8 COMMAND_RESET = 3
+
+uint8 task      # Task select switch (TASK 1, TASK 2, TASK 3)
+uint8 command     # Command(START, STOP, RESET)
 ---
 # Response
 bool success     # Command execution result
