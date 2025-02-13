@@ -11,9 +11,11 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UpperLimbCommand.srv"
+  "msg/UpperLimbState.msg"
 )
 
 if(BUILD_TESTING)
