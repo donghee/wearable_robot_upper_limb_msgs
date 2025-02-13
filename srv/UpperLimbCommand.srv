@@ -1,0 +1,12 @@
+# Request
+# Available Modes
+uint8 USER_MODE_1 = 0
+uint8 USER_MODE_2 = 1
+uint8 USER_MODE_3 = 2
+
+uint8 mode      # Mode switch (USER_MODE_1, 2, 3)
+bool[2] button     # button is true when pressed
+---
+# Response
+bool success     # Command execution result
+string message   # Status or error message
